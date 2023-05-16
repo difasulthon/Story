@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40243EAC29D1E066001B623B /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40243EAB29D1E066001B623B /* InfoView.swift */; };
 		40B006A029B8C6130051412F /* DifaCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B0069F29B8C6130051412F /* DifaCardApp.swift */; };
 		40B006A229B8C6130051412F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B006A129B8C6130051412F /* ContentView.swift */; };
 		40B006A429B8C6160051412F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40B006A329B8C6160051412F /* Assets.xcassets */; };
 		40B006A729B8C6160051412F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40B006A629B8C6160051412F /* Preview Assets.xcassets */; };
+		40B006B029B8C9EA0051412F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B006AF29B8C9EA0051412F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40243EAB29D1E066001B623B /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		40B0069C29B8C6130051412F /* DifaCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DifaCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B0069F29B8C6130051412F /* DifaCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifaCardApp.swift; sourceTree = "<group>"; };
 		40B006A129B8C6130051412F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		40B006A329B8C6160051412F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40B006A629B8C6160051412F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		40B006AE29B8C97F0051412F /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pacifico-Regular.ttf"; path = "../../../../../Downloads/Pacifico/Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		40B006AF29B8C9EA0051412F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		40B006B129B8D3900051412F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +57,14 @@
 		40B0069E29B8C6130051412F /* DifaCard */ = {
 			isa = PBXGroup;
 			children = (
+				40B006B129B8D3900051412F /* Info.plist */,
+				40B006AD29B8C9310051412F /* fonts */,
 				40B0069F29B8C6130051412F /* DifaCardApp.swift */,
 				40B006A129B8C6130051412F /* ContentView.swift */,
 				40B006A329B8C6160051412F /* Assets.xcassets */,
 				40B006A529B8C6160051412F /* Preview Content */,
+				40B006AF29B8C9EA0051412F /* LaunchScreen.storyboard */,
+				40243EAB29D1E066001B623B /* InfoView.swift */,
 			);
 			path = DifaCard;
 			sourceTree = "<group>";
@@ -65,6 +75,14 @@
 				40B006A629B8C6160051412F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		40B006AD29B8C9310051412F /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				40B006AE29B8C97F0051412F /* Pacifico-Regular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40B006B029B8C9EA0051412F /* LaunchScreen.storyboard in Resources */,
 				40B006A729B8C6160051412F /* Preview Assets.xcassets in Resources */,
 				40B006A429B8C6160051412F /* Assets.xcassets in Resources */,
 			);
@@ -138,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40B006A229B8C6130051412F /* ContentView.swift in Sources */,
+				40243EAC29D1E066001B623B /* InfoView.swift in Sources */,
 				40B006A029B8C6130051412F /* DifaCardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,8 +289,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DifaCard/Preview Content\"";
+				DEVELOPMENT_TEAM = 7HAZXR6PNP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DifaCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,8 +319,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DifaCard/Preview Content\"";
+				DEVELOPMENT_TEAM = 7HAZXR6PNP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DifaCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
